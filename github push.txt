@@ -14,3 +14,19 @@ step 7
   git branch -M main
 step 8
   git push -u origin main    
+
+incase you make changes
+step 1
+  git status
+step 2
+  git add .
+step 3   
+  git commit -m "astrafigurah" 
+step 4
+  git push origin main
+
+BONUS CMDs
+git add. && git commit -m "####"  && git push origin main
+
+CHECk commit history
+git log --oneline -5
