@@ -30,3 +30,4 @@ git add. && git commit -m "####"  && git push origin main
 
 CHECk commit history
 git log --oneline -5
+git log --all --full-history
