@@ -1,0 +1,5 @@
+echo 'alias yt="yt-dlp --cookies-from-browser firefox --remote-components ejs:npm --downloader aria2c --downloader-args \"aria2c:-x 16 -s 16\" -o ~/Downloads/\%(title)s.\%(ext)s"' >> ~/.zshrc
+ NEXT STEP
+source ~/.zshrc
+ NEXT STEPP
+yt "yt link"
