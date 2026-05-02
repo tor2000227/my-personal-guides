@@ -1,0 +1,25 @@
+STEP 1
+  nano ~/.local/bin/yt-dlp
+
+STEP 2
+  #!/bin/bash
+yt-dlp \
+    --cookies-from-browser firefox \
+    --remote-components ejs:npm \
+    --downloader aria2c \
+    --downloader-args "aria2c:-x 16 -s 16" \
+    -o "~/Downloads/%(title)s.%(ext)s" \
+    "$@"
+
+STEP 3
+  chmod +x ~/.local/bin/yt-dlp
+
+STEP 4
+  echo $PATH | grep -q "$HOME/.local/bin" && echo "Already in PATH" || echo "Not in PATH"
+
+STEP 5
+   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+STEP 6
+   yt-dlp "youtube link"
